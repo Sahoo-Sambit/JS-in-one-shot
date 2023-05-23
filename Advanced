@@ -1,0 +1,30 @@
+
+
+.......................................................Currying..............................................................................
+
+Currying is transforming a function with mulitple arguements into a nested series of functions, each taking a single arguements.
+It helps to avoid passing same variable multiple times, and it helps to create higher order function.
+
+function A(a) {
+    return function (b) {
+        return function (c) {
+           return a+b+c;
+        }
+    }
+}
+let result1=A(1)(2)(3);
+console.log(result1);                   // 6
+
+// a,b,c are parameters of nested functions.
+let result = a => b => c => a+b+c;      // Arrow function automatically returns a value. Multiple arrow denotes nested functions.
+console.log(result(1)(2)(3))            // 6
+
+.............................................................................................................................................
+
+
+
+
+
+
+
+

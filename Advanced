@@ -19,8 +19,22 @@ console.log(result1);                   // 6
 let result = a => b => c => a+b+c;      // Arrow function automatically returns a value. Multiple arrow denotes nested functions.
 console.log(result(1)(2)(3))            // 6
 
-.............................................................................................................................................
+....................................................CallBacks in JS...........................................................................
 
+Two issues while using callbacks
+
+1 - Callback hell
+When a function is passed as an argument to another function, it becomes a callback function. 
+This process continues and there are many callbacks inside another's Callback function.
+This grows the code horizontally instead of vertically. That mechanism is known as callback hell. 
+
+2. Inversion of control
+Now we are achieving the asynchronous operation using callback. 
+But when we give a responsibility to execute our written function to some other function as a callback, that moment we completely loose the control of our code 
+and this is call as "Inversion of Control". Which is very dangerous
+
+
+................................................................................................................................................
 
 
 
